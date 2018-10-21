@@ -110,6 +110,7 @@
 			dap2 {
 				nvidia,pins = "dap2";
 				nvidia,function = "dap2";
+				nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 			};
 			dap3 {
 				nvidia,pins = "dap3";
@@ -161,8 +162,13 @@
 			};
 			kbca {
 				nvidia,pins = "kbca", "kbcb", "kbcc", "kbcd",
-					"kbce", "kbcf";
+					"kbcf";
 				nvidia,function = "kbc";
+			};
+			kbce {
+				nvidia,pins = "kbce";
+				nvidia,function = "kbc";
+				nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 			};
 			lcsn {
 				nvidia,pins = "lcsn", "ldc", "lm0", "lpw1",
